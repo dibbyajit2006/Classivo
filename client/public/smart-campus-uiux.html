@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102f27" />
+    <meta
+      name="description"
+      content="Responsive Smart Campus dashboard UI/UX prototype."
+    />
+    <title>Classivo · Smart Campus UI Preview</title>
+    <link rel="stylesheet" href="smart-campus-uiux.css" />
+  </head>
+  <body>
+    <input
+      class="portal-radio"
+      type="radio"
+      name="portal"
+      id="teacher-portal"
+      checked
+    />
+    <input
+      class="portal-radio"
+      type="radio"
+      name="portal"
+      id="student-portal"
+    />
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a
+          class="brand"
+          href="#overview"
+          aria-label="Classivo Smart Campus home"
+        >
+          <span class="brand-mark"><i></i><i></i><i></i><i></i></span>
+          <span><strong>classivo</strong><small>SMART CAMPUS</small></span>
+        </a>
+
+        <div class="portal-switch" aria-label="Choose a portal">
+          <label class="switch-option teacher-option" for="teacher-portal"
+            ><span class="switch-icon">T</span> Teacher / Admin</label
+          >
+          <label class="switch-option student-option" for="student-portal"
+            ><span class="switch-icon">S</span> Student</label
+          >
+        </div>
+
+        <div class="campus-card">
+          <span class="campus-monogram">C</span>
+          <span
+            ><strong>Classivo Institute</strong
+            ><small>North campus</small></span
+          >
+          <span class="more">···</span>
+        </div>
+
+        <nav class="side-nav" aria-label="Main navigation">
+          <p class="nav-caption">WORKSPACE</p>
+          <a class="nav-link active" href="#overview"
+            ><span class="nav-icon">▦</span> Overview</a
+          >
+          <a class="nav-link teacher-only" href="#roster"
+            ><span class="nav-icon">♙</span> Students</a
+          >
+          <a class="nav-link" href="#attendance"
+            ><span class="nav-icon">▦</span> Attendance</a
+          >
+          <a class="nav-link" href="#notes"
+            ><span class="nav-icon">▤</span> Class notes</a
+          >
+          <a class="nav-link" href="#updates"
+            ><span class="nav-icon">◌</span> Notifications</a
+          >
+          <p class="nav-caption nav-caption-lower">CAMPUS</p>
+          <a class="nav-link teacher-only" href="#classroom"
+            ><span class="nav-icon">⌁</span> Classroom control</a
+          >
+          <a class="nav-link" href="#profile"
+            ><span class="nav-icon">◎</span> Profile</a
+          >
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-spark">✦</span
+            ><strong>Your campus, in sync.</strong>
+            <p>One clear view of everything happening today.</p>
+            <a href="#overview">Explore campus guide <span>→</span></a>
+          </div>
+          <div class="mini-profile">
+            <span class="avatar avatar-cream">NV</span
+            ><span
+              ><strong class="teacher-name">Naina Verma</strong
+              ><strong class="student-name">Maya Patel</strong
+              ><small class="teacher-only">Teacher · Class 3B</small
+              ><small class="student-only">Student · CS-2412</small></span
+            ><span class="more">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-shell">
+        <header class="topbar">
+          <div class="breadcrumbs">
+            <span>Campus</span><b>›</b><strong>Overview</strong>
+          </div>
+          <div class="topbar-actions">
+            <span class="live-pill"><i></i> Campus live</span
+            ><button class="icon-button" aria-label="Search">⌕</button
+            ><button
+              class="icon-button notification"
+              aria-label="Notifications"
+            >
+              ♧<i></i></button
+            ><span class="top-divider"></span
+            ><span class="top-user"
+              ><span class="avatar avatar-small">NV</span
+              ><span class="teacher-name">Naina Verma</span
+              ><span class="student-name">Maya Patel</span
+              ><span class="chevron">⌄</span></span
+            >
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <div class="page-title-row">
+            <div>
+              <p class="eyebrow"><span>◷</span> MONDAY, SEPTEMBER 27, 2026</p>
+              <h1>Overview</h1>
+              <p class="subtitle teacher-only">
+                A thoughtful overview of your classroom and campus.
+              </p>
+              <p class="subtitle student-only">
+                Your learning day, all in one place.
+              </p>
+            </div>
+            <span class="preview-chip">UI preview · sample data</span>
+          </div>
+
+          <section
+            class="portal-view view-teacher"
+            id="overview"
+            aria-label="Teacher dashboard"
+          >
+            <section class="hero teacher-hero">
+              <div class="hero-copy">
+                <span class="hero-kicker"><i></i> YOUR CLASS BRIEFING</span>
+                <h2>Good morning,<br /><em>Prof. Naina</em></h2>
+                <p>
+                  Here’s what’s happening across Class 3B. A little clarity goes
+                  a long way.
+                </p>
+                <div class="hero-meta">
+                  <span>☼ &nbsp; Campus day</span><i></i
+                  ><span>▦ &nbsp; Your assigned classes</span>
+                </div>
+                <a class="hero-action" href="#attendance"
+                  >Review today’s attendance <span>→</span></a
+                >
+              </div>
+              <div class="hero-photo">
+                <img
+                  src="/manus-storage/rhPO7dUUAl2g_f779c704.jpg"
+                  alt="Modern university campus courtyard"
+                />
+                <div class="photo-shade"></div>
+                <span class="photo-tag">☼ &nbsp; North campus</span>
+                <div class="photo-caption">
+                  <small><i></i> LIVE CAMPUS</small
+                  ><strong>A good day to learn something new.</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="stat-grid" aria-label="Teacher summary">
+              <article class="stat-card">
+                <span class="stat-icon sage">♙</span
+                ><span class="card-menu">···</span
+                ><small>Assigned students</small><strong>7</strong
+                ><span class="stat-foot"
+                  >Across 1 assigned class <b>3B ↘</b></span
+                >
+              </article>
+              <article class="stat-card">
+                <span class="stat-icon mint">✓</span
+                ><span class="card-menu">···</span><small>Present today</small
+                ><strong>5</strong
+                ><span class="stat-foot"
+                  >71% of your roster <b class="positive">Approved</b></span
+                >
+              </article>
+              <article class="stat-card">
+                <span class="stat-icon peach">!</span
+                ><span class="card-menu">···</span><small>Needs review</small
+                ><strong>02</strong
+                ><span class="stat-foot"
+                  >Attendance check-ins <b class="attention">Pending</b></span
+                >
+              </article>
+              <article class="stat-card">
+                <span class="stat-icon lilac">▤</span
+                ><span class="card-menu">···</span><small>Published notes</small
+                ><strong>4</strong
+                ><span class="stat-foot"
+                  >Shared with Class 3B <b>View →</b></span
+                >
+              </article>
+            </section>
+
+            <div class="two-column">
+              <section class="panel attendance-panel" id="attendance">
+                <div class="panel-heading">
+                  <div>
+                    <span class="section-label">ATTENDANCE TREND</span>
+                    <h3>Attendance in your classes.</h3>
+                    <p>Daily records, ready for a quick review.</p>
+                  </div>
+                  <a class="small-button" href="#attendance"
+                    >Review records <span>⌄</span></a
+                  >
+                </div>
+                <div class="chart-summary">
+                  <strong>89%</strong><span>↗ &nbsp;Weekly average</span>
+                </div>
+                <div
+                  class="chart"
+                  role="img"
+                  aria-label="Weekly attendance chart: Monday 88 percent, Tuesday 92, Wednesday 86, Thursday 95, Friday 91, Saturday 78"
+                >
+                  <div class="chart-y">
+                    <span>100%</span><span>75%</span><span>50%</span
+                    ><span>25%</span><span>0%</span>
+                  </div>
+                  <div class="chart-bars">
+                    <div class="bar-wrap">
+                      <i style="--bar: 72%"></i><small>Mon</small>
+                    </div>
+                    <div class="bar-wrap">
+                      <i style="--bar: 80%"></i><small>Tue</small>
+                    </div>
+                    <div class="bar-wrap">
+                      <i style="--bar: 68%"></i><small>Wed</small>
+                    </div>
+                    <div class="bar-wrap">
+                      <i style="--bar: 88%"></i><small>Thu</small>
+                    </div>
+                    <div class="bar-wrap">
+                      <i style="--bar: 82%"></i><small>Fri</small>
+                    </div>
+                    <div class="bar-wrap">
+                      <i style="--bar: 55%"></i><small>Sat</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-legend">
+                  <span><i></i> Attendance</span
+                  ><span><b></b> Weekly class trend</span>
+                </div>
+              </section>
+
+              <section class="panel roster-panel" id="roster">
+                <div class="panel-heading">
+                  <div>
+                    <span class="section-label">ASSIGNED ROSTER</span>
+                    <h3>Your students</h3>
+                    <p>Class 3B · assigned class only</p>
+                  </div>
+                  <a
+                    class="arrow-button"
+                    href="#roster"
+                    aria-label="View all students"
+                    >→</a
+                  >
+                </div>
+                <div class="roster-summary">
+                  <strong>5 <small>/ 7</small></strong
+                  ><span>approved present today</span><b>71%</b>
+                </div>
+                <div class="roster-list">
+                  <div class="roster-row">
+                    <span class="avatar avatar-green">AS</span
+                    ><strong>Aarav Shah</strong><small>CS-2401</small
+                    ><i class="status-dot"></i>
+                  </div>
+                  <div class="roster-row">
+                    <span class="avatar avatar-lilac">DM</span
+                    ><strong>Diya Mehta</strong><small>CS-2402</small
+                    ><i class="status-dot"></i>
+                  </div>
+                  <div class="roster-row">
+                    <span class="avatar avatar-peach">KN</span
+                    ><strong>Kabir Nair</strong><small>CS-2403</small
+                    ><i class="status-dot"></i>
+                  </div>
+                  <div class="roster-row">
+                    <span class="avatar avatar-blue">AR</span
+                    ><strong>Ananya Rao</strong><small>CS-2404</small
+                    ><i class="status-dot pending-dot"></i>
+                  </div>
+                </div>
+                <a class="text-link" href="#roster"
+                  >View assigned class list <span>→</span></a
+                >
+              </section>
+            </div>
+
+            <div class="two-column lower-grid">
+              <section class="panel classroom-panel" id="classroom">
+                <div class="panel-heading">
+                  <div>
+                    <span class="section-label">SMART CLASSROOM</span>
+                    <h3>Room CSE-101</h3>
+                    <p>Classroom occupancy &amp; device controls</p>
+                  </div>
+                  <span class="demo-pill"><i></i> DEMO</span>
+                </div>
+                <div class="room-content">
+                  <div class="occupancy-ring">
+                    <span><strong>38</strong><small>students</small></span>
+                  </div>
+                  <div class="room-details">
+                    <div>
+                      <span>Room capacity</span><strong>42 seats</strong>
+                    </div>
+                    <div>
+                      <span>Lights &amp; fans</span
+                      ><strong class="positive">● Auto mode</strong>
+                    </div>
+                    <a class="text-link" href="#classroom"
+                      >Manage classroom <span>→</span></a
+                    >
+                  </div>
+                </div>
+                <div class="zone-row">
+                  <span>● Zone A <b>14</b></span
+                  ><span>● Zone B <b>16</b></span
+                  ><span>● Zone C <b>08</b></span>
+                </div>
+              </section>
+              <section class="panel notes-panel" id="notes">
+                <div class="panel-heading">
+                  <div>
+                    <span class="section-label">CLASS NOTES</span>
+                    <h3>Latest from your classes</h3>
+                    <p>Shared with assigned students.</p>
+                  </div>
+                  <a
+                    class="arrow-button"
+                    href="#notes"
+                    aria-label="Open class notes"
+                    >→</a
+                  >
+                </div>
+                <div class="note-item">
+                  <span class="note-icon">▤</span
+                  ><span
+                    ><strong>Database Systems · Normalization</strong
+                    ><small>Lecture notes · Published today</small></span
+                  ><span class="note-arrow">↗</span>
+                </div>
+                <div class="note-item">
+                  <span class="note-icon note-icon-blue">▧</span
+                  ><span
+                    ><strong>Data Structures · Graph traversal</strong
+                    ><small>Reading resource · Yesterday</small></span
+                  ><span class="note-arrow">↗</span>
+                </div>
+                <a class="text-link" href="#notes"
+                  >Manage class notes <span>→</span></a
+                >
+              </section>
+            </div>
+          </section>
+
+          <section
+            class="portal-view view-student"
+            aria-label="Student dashboard"
+          >
+            <section class="hero student-hero">
+              <div class="hero-copy">
+                <span class="hero-kicker"
+                  ><i></i> YOUR CAMPUS, AT A GLANCE</span
+                >
+                <h2>Good morning,<br /><em>Maya Patel</em></h2>
+                <p>
+                  You’re right on track. Here’s your learning day and the latest
+                  from your teachers.
+                </p>
+                <div class="hero-meta">
+                  <span>▦ &nbsp; Class 3B</span><i></i
+                  ><span>♙ &nbsp; Roll CS-2412</span>
+                </div>
+                <a class="hero-action" href="#student-attendance"
+                  >View my attendance <span>→</span></a
+                >
+              </div>
+              <div class="hero-photo">
+                <img
+                  src="/manus-storage/rhPO7dUUAl2g_f779c704.jpg"
+                  alt="Modern university campus courtyard"
+                />
+                <div class="photo-shade"></div>
+                <span class="photo-tag">☼ &nbsp; North campus</span>
+                <div class="photo-caption">
+                  <small><i></i> YOUR CAMPUS</small
+                  ><strong>Make today a good one.</strong>
+                </div>
+              </div>
+            </section>
+            <section class="stat-grid" aria-label="Student summary">
+              <article class="stat-card">
+                <span class="stat-icon sage">▦</span
+                ><span class="card-menu">···</span
+                ><small>Attendance this term</small><strong>92%</strong
+                ><span class="stat-foot"
+                  >Above the 85% requirement
+                  <b class="positive">On track</b></span
+                >
+              </article>
+              <article class="stat-card">
+                <span class="stat-icon mint">▤</span
+                ><span class="card-menu">···</span><small>New class notes</small
+                ><strong>4</strong
+                ><span class="stat-foot"
+                  >From your subject teachers <b>Open →</b></span
+                >
+              </article>
+              <article class="stat-card">
+                <span class="stat-icon peach">◷</span
+                ><span class="card-menu">···</span><small>Next class</small
+                ><strong class="stat-text">10:30 AM</strong
+                ><span class="stat-foot">Data Structures · Room 204</span>
+              </article>
+              <article class="stat-card">
+                <span class="stat-icon lilac">▧</span
+                ><span class="card-menu">···</span
+                ><small>My open requests</small><strong>1</strong
+                ><span class="stat-foot"
+                  >Complaint status <b>In progress</b></span
+                >
+              </article>
+            </section>
+            <div class="two-column">
+              <section class="panel subject-panel" id="student-attendance">
+                <div class="panel-heading">
+                  <div>
+                    <span class="section-label">MY ATTENDANCE</span>
+                    <h3>By subject</h3>
+                    <p>Updated from approved check-ins.</p>
+                  </div>
+                  <a class="small-button" href="#student-attendance"
+                    >View history <span>→</span></a
+                  >
+                </div>
+                <div class="subject-row">
+                  <span class="subject-mark mark-sage">DS</span
+                  ><span class="subject-copy"
+                    ><strong>Data Structures</strong
+                    ><small>32 of 34 classes</small></span
+                  >
+                  <div class="progress-track"><i style="width: 94%"></i></div>
+                  <strong class="subject-percent">94%</strong>
+                </div>
+                <div class="subject-row">
+                  <span class="subject-mark mark-gold">DB</span
+                  ><span class="subject-copy"
+                    ><strong>Database Systems</strong
+                    ><small>29 of 33 classes</small></span
+                  >
+                  <div class="progress-track"><i style="width: 88%"></i></div>
+                  <strong class="subject-percent">88%</strong>
+                </div>
+                <div class="subject-row">
+                  <span class="subject-mark mark-blue">CN</span
+                  ><span class="subject-copy"
+                    ><strong>Computer Networks</strong
+                    ><small>28 of 34 classes</small></span
+                  >
+                  <div class="progress-track"><i style="width: 82%"></i></div>
+                  <strong class="subject-percent">82%</strong>
+                </div>
+                <div class="subject-row">
+                  <span class="subject-mark mark-rose">SE</span
+                  ><span class="subject-copy"
+                    ><strong>Software Engineering</strong
+                    ><small>25 of 33 classes</small></span
+                  >
+                  <div class="progress-track"><i style="width: 76%"></i></div>
+                  <strong class="subject-percent">76%</strong>
+                </div>
+              </section>
+              <section class="panel teacher-notes-panel" id="student-notes">
+                <div class="panel-heading">
+                  <div>
+                    <span class="section-label">FROM YOUR TEACHERS</span>
+                    <h3>Latest class notes</h3>
+                    <p>Only notes shared with Class 3B.</p>
+                  </div>
+                  <a
+                    class="arrow-button"
+                    href="#student-notes"
+                    aria-label="View notes"
+                    >→</a
+                  >
+                </div>
+                <div class="teacher-note">
+                  <span class="note-icon">▤</span
+                  ><span
+                    ><strong>Normalization &amp; SQL joins</strong
+                    ><small>Database Systems · Prof. Naina Verma</small></span
+                  ><b>NEW</b>
+                </div>
+                <div class="teacher-note">
+                  <span class="note-icon note-icon-blue">▧</span
+                  ><span
+                    ><strong>Graph traversal practice</strong
+                    ><small>Data Structures · Prof. Arjun Rao</small></span
+                  ><b>PDF</b>
+                </div>
+                <div class="next-class">
+                  <span class="next-class-icon">◷</span
+                  ><span
+                    ><small>NEXT ON YOUR TIMETABLE</small
+                    ><strong>Data Structures · 10:30 AM</strong
+                    ><em>Room 204 · Prof. Arjun Rao</em></span
+                  >
+                </div>
+              </section>
+            </div>
+            <div class="notice-strip" id="updates">
+              <span class="notice-icon">!</span
+              ><span
+                ><strong>One request is being worked on.</strong
+                ><small
+                  >Your classroom projector complaint was acknowledged by the
+                  campus team.</small
+                ></span
+              ><a href="#updates">Track request →</a>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <span>© 2026 Classivo Institute</span
+            ><span><i></i> All systems operational</span
+            ><a href="#profile">Need help?</a>
+          </footer>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

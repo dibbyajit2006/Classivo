@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1790504357060,
+      "tag": "0000_violet_titanium_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1790504784985,
+      "tag": "0001_swift_umar",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1790507753038,
+      "tag": "0002_hesitant_fixer",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1790508104576,
+      "tag": "0003_worried_slapstick",
+      "breakpoints": true
+    }
+  ]
+}
