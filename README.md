@@ -146,11 +146,11 @@ SmartClassX is designed with security and privacy in mind.
 
 Status: 🚧 Under Development
 
-SmartClassX is currently being developed as a smart campus project combining software, AI, and IoT technologies.
+Classivo is currently being developed as a smart campus project combining software, AI, and IoT technologies.
 
 👨‍💻 Contributors
 
-Built with ❤️ by the TensorDynamics Team.
+Built with ❤️ by the TensorvDynamics Team.
 
 ---
 
