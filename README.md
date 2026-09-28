@@ -1,4 +1,4 @@
-SmartClassX 🚀
+Classivo 🚀
 
 AI + IoT Based Smart Classroom & Smart Campus Management System
 
