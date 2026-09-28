@@ -69,10 +69,10 @@ Camera / CCTV / Smart Board / ESP32
       Database + File Storage
               ↓
        Notification Service
-              ↓
+            ↓
     ┌───────┴───────────┐
-    ↓                        ↓
-Student Portal             Teacher Portal
+    ↓                   ↓
+Student Portal         Teacher Portal
 
 🛠️ Technology Stack
 
@@ -150,7 +150,7 @@ SmartClassX is currently being developed as a smart campus project combining sof
 
 👨‍💻 Contributors
 
-Built with ❤️ by the SmartClassX Team.
+Built with ❤️ by the TensorDynamics Team.
 
 ---
 
