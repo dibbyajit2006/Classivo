@@ -1,0 +1,45 @@
+// Smart Room: PIR controlled Fan + Light
+#ifndef ARDUINO
+#include <Arduino.h>
+#include <Wire.h>
+#include <SPI.h>
+
+
+const int PIR_PIN   = 2;   // PIR sensor OUT → Arduino D2
+const int FAN_RELAY = 8;   // Relay CH1 IN1 → Arduino D8
+const int LIGHT_RELAY = 9; // Relay CH2 IN2 → Arduino D9
+
+void setup() {
+  pinMode(PIR_PIN, INPUT);
+
+  pinMode(FAN_RELAY, OUTPUT);
+  pinMode(LIGHT_RELAY, OUTPUT);
+
+  // Initially everything OFF
+  digitalWrite(FAN_RELAY, LOW);
+  digitalWrite(LIGHT_RELAY, LOW);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  int motion = digitalRead(PIR_PIN);
+
+  if (motion == HIGH) {
+    // Person detected
+    digitalWrite(FAN_RELAY, HIGH);
+    digitalWrite(LIGHT_RELAY, HIGH);
+
+    Serial.println("Person detected - FAN & LIGHT ON");
+  }
+  else {
+    // No person detected
+    digitalWrite(FAN_RELAY, LOW);
+    digitalWrite(LIGHT_RELAY, LOW);
+
+    Serial.println("No person - FAN & LIGHT OFF");
+  }
+
+  delay(100);
+}
