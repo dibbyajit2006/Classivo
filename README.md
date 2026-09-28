@@ -61,18 +61,18 @@ The system combines Artificial Intelligence, Computer Vision, IoT, and Web Techn
 🏗️ System Architecture
 
 Camera / CCTV / Smart Board / ESP32
-                ↓
+              ↓
        AI / Computer Vision
-                ↓
+              ↓
  Backend API + Authentication
-                ↓
+              ↓
       Database + File Storage
-                ↓
+              ↓
        Notification Service
-                ↓
-    ┌───────────┴───────────┐
-    ↓                       ↓
-Student Portal        Teacher Portal
+              ↓
+    ┌───────┴───────────┐
+    ↓                        ↓
+Student Portal             Teacher Portal
 
 🛠️ Technology Stack
 
